@@ -4,7 +4,7 @@ const HTML_CONTENT = `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Tab</title>
+    <title>Ben 的导航主页</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>⭐</text></svg>">
     <style>
     /* 全局样式 */
@@ -2007,15 +2007,10 @@ const HTML_CONTENT = `
     </style>
 </head>
 
-<body>
+<body class="dark-theme">
     <div class="fixed-elements">
         <h3><span class="weather-mini" id="weather-mini" onclick="openWeatherModal()"><span class="weather-loading">加载中...</span></span></h3>
         <div class="center-content">
-            <!-- 一言模块 -->
-            <p id="hitokoto">
-                <a href="#" id="hitokoto_text"></a>
-            </p>
-            <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
             <!-- 搜索栏 -->
             <div class="search-container">
                 <div class="search-bar">
@@ -2187,7 +2182,7 @@ const HTML_CONTENT = `
         duckduckgo: "https://duckduckgo.com/?q="
     };
 
-    let currentEngine = "baidu";
+    let currentEngine = "google";
 
     // 日志记录函数
     function logAction(action, details) {
